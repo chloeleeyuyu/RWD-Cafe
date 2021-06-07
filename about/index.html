@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="grid-flex">
+        <div id="set">
+            <div class="hamT"></div>
+            <div class="hamM"></div>
+            <div class="hamB"></div>
+        </div>
+        <div id="logo"><p><a href="index.html">Chloé Café</a></p></div>
+        <nav>
+             <ul>
+                <li class="item"><a href="index.html">首頁</a></li>
+                <li class="item"><a href="about/index.html">品牌故事</a></li>
+                <li class="item"><a href="product/index.html">餐點介紹</a></li>
+                <li class="item"><a href="stores/index.html">門市據點</a></li>
+                <li class="item"><a href="feedback/index.html" target="_blank">問卷調查</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="about" class="grid-flex">
+        <div class="grid-3">
+            <img src="images/fodr_7.jpg" alt="">
+        </div>
+        <div class="grid-3">
+            <div class="txt">
+                <p>2021年於台北萬華創立<b>Chloé Café</b></p>
+                <br>
+                <p><b>Chloé Café</b>於萬華的一角落點綴著，期待與您的相遇。<br>
+                為城市裡繁忙的人兒，提供一隅寧靜綠洲，<br>
+                為遠道而來的過客兒，準備一杯香氣四溢的咖啡，<br>
+                分享美好片刻、分享日常確幸<br>
+                <br>
+                <p>
+                    每一杯都是店內烘培<br>
+                    每一杯都是經過把關<br>
+                    每一杯都是為了呈現給您
+                </p>
+                <br><br>            
+            </div>
+        </div>
+    </div>
+
+    <div id="follow" class="grid-flex">
+        <div class="icon">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="icon">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <footer>&copy;Chloé Lee</footer>
+</body>
+</html>
+<script>
+    let set = document.getElementById("set");
+let nav = document.getElementsByTagName("nav")[0];
+let hamT = document.getElementsByClassName("hamT")[0];
+let hamM = document.getElementsByClassName("hamM")[0];
+let hamB = document.getElementsByClassName("hamB")[0];
+set.addEventListener("click",function(){
+    if(nav.style.display == "none" || nav.style.display == ""){
+        nav.style.display = "block";
+        hamT.style.transform = "rotate(23deg)";
+        hamM.style.transform = "scale(0)";
+        hamB.style.transform = "rotate(-23deg)";
+    }else{
+        nav.style.display = "none";
+        hamT.style.transform = "rotate(0deg)";
+        hamM.style.transform = "scale(1)";
+        hamB.style.transform = "rotate(0deg)";
+    }
+})
+</script>
