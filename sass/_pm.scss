@@ -1,0 +1,51 @@
+@for $i from 1 through 10 {
+    .grid-p-#{$i}{
+        padding: calc(#{$i} * 1em);
+    }
+}
+@for $i from 1 through 10 {
+    .grid-p-t-#{$i}{
+        padding-top: calc(#{$i} * 1em);
+    }
+}
+@for $i from 1 through 10 {
+    .grid-p-l-#{$i}{
+        padding-left: calc(#{$i} * 1em);
+    }
+}
+@for $i from 1 through 10 {
+    .grid-p-b-#{$i}{
+        padding-bottom: calc(#{$i} * 1em);
+    }
+}
+@for $i from 1 through 10 {
+    .grid-p-r-#{$i}{
+        padding-right: calc(#{$i} * 1em);
+    }
+}
+
+@for $i from 1 through 10 {
+    .grid-m-#{$i}{
+        margin: calc(#{$i} * 1em);
+    }
+}
+@for $i from 1 through 10 {
+    .grid-m-t-#{$i}{
+        margin-top: calc(#{$i} * 1em);
+    }
+}
+@for $i from 1 through 10 {
+    .grid-m-l-#{$i}{
+        margin-left: calc(#{$i} * 1em);
+    }
+}
+@for $i from 1 through 10 {
+    .grid-m-b-#{$i}{
+        margin-bottom: calc(#{$i} * 1em);
+    }
+}
+@for $i from 1 through 10 {
+    .grid-m-r-#{$i}{
+        margin-right: calc(#{$i} * 1em);
+    }
+}

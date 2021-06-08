@@ -1,0 +1,25 @@
+$colors: yellow,Gold, DarkRed,lightcoral,navy,blue,deepskyblue,DarkGray,Gray,lightgray,black,white;
+@each $color in $colors{
+    .text-#{$color}{
+        color:$color;
+    }
+}
+@each $color in $colors{
+    .bg-#{$color}{
+        background-color: $color;
+    }
+}
+
+$textAligns:center,right,left;
+@each $textAlign in $textAligns{
+    .texta-#{$textAlign}{
+        text-align: $textAlign;
+    }
+}
+
+$textBold:normal,bold;
+@each $b in $textBold{
+    .text-#{$b}{
+        font-weight: #{$b};
+    }
+}
